@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOVA DRIFT — survive the swarm</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<canvas id="game" width="1280" height="720" aria-label="NOVA DRIFT: fly your ship, shoot the swarm, survive every wave"></canvas>
+<p id="status" role="status" aria-live="polite">NOVA DRIFT — WASD to fly, mouse to aim, hold click or Space to fire.</p>
+<script type="module">
+import { bootGame } from './src/main.js';
+bootGame(document.getElementById('game'));
+</script>
+</body>
+</html>
